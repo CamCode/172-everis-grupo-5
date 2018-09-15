@@ -1,7 +1,7 @@
-# Proyecto sin nombre
+# Proyecto fedetas
 
-URL (producción): xxxx
-URL (desarrollo): xxx
+URL (producción): https://fedetas.herokuapp.com/
+URL (desarrollo): https://fedetas-dev.herokuapp.com/
 
 ### Descripción
 
