@@ -1,24 +1,11 @@
-# README
+# Proyecto fedetas
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+URL (producción): https://fedetas.herokuapp.com/
+URL (desarrollo): https://fedetas-dev.herokuapp.com/
 
-Things you may want to cover:
+### Descripción
 
-* Ruby version
+loresmxxxx
 
-* System dependencies
+### Caracteristicas
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
