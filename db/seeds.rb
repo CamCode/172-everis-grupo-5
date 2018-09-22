@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+(0..9).each do |n|
+Cliente.create(	tipoId: "CC",
+				numId: "1000#{n}",
+				nombre: "Leonardo",
+			 	apellido: "Saenz")
+end
