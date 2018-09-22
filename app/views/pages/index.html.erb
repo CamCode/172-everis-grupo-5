@@ -14,3 +14,10 @@ hola soy miguelllll
 <%= n.titulo %>
 <br>
 <% end %>
+
+<% if current_user %>
+<%= link_to 'Salir', destroy_user_session_path, method: :delete %>
+Usuario logueado:
+<%= current_user.email %>	
+<% end %>
+
