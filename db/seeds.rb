@@ -8,5 +8,9 @@
 
 
 
+Motivo.create(	idMotivo: 1, nombreMotivo: "Deseo ser mejor estudiante")
+Motivo.create(	idMotivo: 2, nombreMotivo: "No aprendo en el cole")
+Motivo.create(	idMotivo: 3, nombreMotivo: "Deseo validar")
+Motivo.create(	idMotivo: 4, nombreMotivo: "No me gusta el cole")
+Motivo.create(	idMotivo: 5, nombreMotivo: "Deseo entrar a la universidad")
 
-Motivo.update(1, :nombreMotivo => 'Deseo ser mejor estudiante')
