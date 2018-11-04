@@ -19,6 +19,13 @@ Rails.application.routes.draw do
 		end
 	end
 
+	namespace :api do
+		namespace :v1 do
+		get 'consultarmateria' , to: 'consultarmateria#index'	
+		end
+	end
+
+
 	root to: 'pages#index'
 
 
