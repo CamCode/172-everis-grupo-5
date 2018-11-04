@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :cars
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
 
@@ -12,6 +13,13 @@ Rails.application.routes.draw do
 	namespace :api do
 		namespace :v1 do
 		get 'consultarestudiante', to:  'consultarestudiante#index'
+		end
+	end
+
+	namespace :api do
+		namespace :v1 do
+		#get 'consultarestudiante/:id_estudiante', to:  'consultarestudiante#index'			
+		get 'consultarestudiante/:id_estudiante', to:  'consultarestudiante#index'
 		end
 	end
 
