@@ -9,6 +9,9 @@ Things you may want to cover:
 
 * System dependencies
 
+<<<<<<< HEAD
+111
+=======
 * Configuration
 
 * Database creation
@@ -22,3 +25,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+>>>>>>> 1966b7e46ec6498e6938b4cc4736b9b9e3a55d5a
