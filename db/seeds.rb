@@ -25,3 +25,9 @@ Estudiante.create(	tipoId: "TI", numId: "94020513361", nombre: "Milton", apellid
 #Materium.create(	idMateria: "0603", nombreMateria: "Ingles")
 #Materium.create(	idMateria: "0604", nombreMateria: "Ciencias Sociales")
 #Materium.create(	idMateria: "0605", nombreMateria: "Ciencias Naturales")				
+
+
+Encuestum.create(    motivo: "1", estudiante:"1", materias:"Matematicas-Español")
+Encuestum.create(    motivo: "2", estudiante:"2", materias:"Ciencias Sociales-Español")
+Encuestum.create(    motivo: "3", estudiante:"3", materias:"Ingles-Español")
+

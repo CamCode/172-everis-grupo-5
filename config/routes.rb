@@ -56,6 +56,7 @@ Rails.application.routes.draw do
 			get 'consultarencuesta/estudiante', to: 'consultarencuesta#index'
 		end
 	end
+	
 
 
 	root to: 'pages#index'
