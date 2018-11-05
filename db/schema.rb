@@ -10,7 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_04_225253) do
+
+ActiveRecord::Schema.define(version: 2018_11_05_043713) do
 
   create_table "books", force: :cascade do |t|
     t.string "title"
@@ -22,11 +23,33 @@ ActiveRecord::Schema.define(version: 2018_11_04_225253) do
   end
 
 
+  create_table "estudiantes", force: :cascade do |t|
+    t.integer "motivo_id"
+    t.string "tipoId"
+    t.string "numId"
+    t.string "nombre"
+    t.string "apellido"
+    t.string "edad"
+    t.string "genero"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["motivo_id"], name: "index_estudiantes_on_motivo_id"
+  end
+
   create_table "materia", force: :cascade do |t|
     t.string "idMateria"
     t.string "nombreMateria"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "materias_estudiantes", force: :cascade do |t|
+    t.integer "materia_id"
+    t.integer "estudiantes_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["estudiantes_id"], name: "index_materias_estudiantes_on_estudiantes_id"
+    t.index ["materia_id"], name: "index_materias_estudiantes_on_materia_id"
   end
 
   create_table "motivos", force: :cascade do |t|
