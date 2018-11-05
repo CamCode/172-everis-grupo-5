@@ -13,16 +13,21 @@
 #Motivo.create(	idMotivo: 4, nombreMotivo: "No me gusta el cole")
 #Motivo.create(	idMotivo: 5, nombreMotivo: "Deseo entrar a la universidad")
 
-#Estudiante.create(	tipoId: "TI", numId: "94080511161", nombre: "Miguel", apellido: "Roa", edad: "15", genero: "masculino")
-#Estudiante.create(	tipoId: "TI", numId: "99080533161", nombre: "Fabian", apellido: "Varon", edad: "16", genero: "masculino")
-#Estudiante.create(	tipoId: "TI", numId: "98080411110", nombre: "Camila", apellido: "Melo", edad: "13", genero: "femenino")
-#Estudiante.create(	tipoId: "TI", numId: "97040522161", nombre: "Leonardo", apellido: "Saenz", edad: "14", genero: "masculino")#Estudiante.create(	tipoId: "TI", numId: "97020283456", nombre: "Yurani Marcela", apellido: "Garnica", edad: "16", genero: "femenino")
-#Estudiante.create(	tipoId: "TI", numId: "94020513361", nombre: "Milton", apellido: "Rojas", edad: "15", genero: "masculino")
+Estudiante.create(	tipoId: "TI", numId: "94080511161", nombre: "Miguel", apellido: "Roa", edad: "15", genero: "masculino")
+Estudiante.create(	tipoId: "TI", numId: "99080533161", nombre: "Fabian", apellido: "Varon", edad: "16", genero: "masculino")
+Estudiante.create(	tipoId: "TI", numId: "98080411110", nombre: "Camila", apellido: "Melo", edad: "13", genero: "femenino")
+Estudiante.create(	tipoId: "TI", numId: "97040522161", nombre: "Leonardo", apellido: "Saenz", edad: "14", genero: "masculino")#Estudiante.create(	tipoId: "TI", numId: "97020283456", nombre: "Yurani Marcela", apellido: "Garnica", edad: "16", genero: "femenino")
+Estudiante.create(	tipoId: "TI", numId: "94020513361", nombre: "Milton", apellido: "Rojas", edad: "15", genero: "masculino")
 
 
-Materium.create(	idMateria: "0601", nombreMateria: "Matematicas")    
-Materium.create(	idMateria: "0602", nombreMateria: "Español")
-Materium.create(	idMateria: "0603", nombreMateria: "Ingles")
-Materium.create(	idMateria: "0604", nombreMateria: "Ciencias Sociales")
-Materium.create(	idMateria: "0605", nombreMateria: "Ciencias Naturales")				
+#Materium.create(	idMateria: "0601", nombreMateria: "Matematicas")    
+#Materium.create(	idMateria: "0602", nombreMateria: "Español")
+#Materium.create(	idMateria: "0603", nombreMateria: "Ingles")
+#Materium.create(	idMateria: "0604", nombreMateria: "Ciencias Sociales")
+#Materium.create(	idMateria: "0605", nombreMateria: "Ciencias Naturales")				
+
+
+Encuestum.create(    motivo: "1", estudiante:"1", materias:"Matematicas-Español")
+Encuestum.create(    motivo: "2", estudiante:"2", materias:"Ciencias Sociales-Español")
+Encuestum.create(    motivo: "3", estudiante:"3", materias:"Ingles-Español")
 
