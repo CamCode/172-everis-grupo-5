@@ -33,6 +33,12 @@ Rails.application.routes.draw do
 		end
 	end
 
+	namespace :api do 
+		namespace :v1 do 
+			get 'consultarencuesta/estudiante', to: 'consultarencuesta#index'
+		end
+	end
+
 
 	root to: 'pages#index'
 
