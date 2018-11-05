@@ -1,8 +1,8 @@
 class Api::V1::ConsultarestudianteController < ApplicationController
 	#GET index
 	def index
-#		@estudiante = Estudiante.all
-#		render json: @estudiantes
+		@estudiantes = Estudiante.all
+		render json: @estudiantes
 		
 #		url= 'http://localhost:3000/api/v1/consultarestudiante?id=1'
 #		uri= URI.parse(request.url)
@@ -17,12 +17,13 @@ class Api::V1::ConsultarestudianteController < ApplicationController
 #		@estudiante.save
 #		@estudiante = Estudiante.find_by_id(id)
 #		render json: @estudiante
-		@estudiante = Estudiante.find_by_nombre(params[:id_estudiante])
-		render json: @estudiante
+#		@estudiante = Estudiante.find_by_nombre(params[:id_estudiante])
+#		render json: @estudiante
 	end	
 
-#	def show
-#		@estudiante = Estudiante.find_by_id(params[:id_estudiante])
-#	end
+	def show
+		@estudiante = Estudiante.find_by_nombre(params[:nombre_estudiante])
+		render json: @estudiante
+	end
 
 end
