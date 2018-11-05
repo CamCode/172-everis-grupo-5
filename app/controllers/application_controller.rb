@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
 
 	layout :layout_by_resource
+	protect_from_forgery with: :null_session
 
 	private
 
