@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :books
 	namespace :api do
 		namespace :v1 do
 		get 'consultarusomotivos', to:  'consultarusomotivos#index'
@@ -22,6 +23,13 @@ Rails.application.routes.draw do
 	namespace :api do
 		namespace :v1 do
 		get 'consultarmateria' , to: 'consultarmateria#index'	
+		end
+	end
+
+
+	namespace :api do
+		namespace :v1 do 
+			post 'registrarmaterias', to: 'registrarmaterias#create'
 		end
 	end
 
