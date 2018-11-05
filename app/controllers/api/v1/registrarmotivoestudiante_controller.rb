@@ -4,12 +4,8 @@ class Api::V1::RegistrarmotivoestudianteController < ApplicationController
 
 		@estudiante = Estudiante.find_by_id(params[:id])
 		@estudiante.update(estudiante_params)
-			if @estudiante.update
-				render json: @estudiante
-			else
-				render json: @estudiante.errors, status: :bad_request
-#				render json: {status: "error", message: "Error al registrar motivo"}
-		end
+		render json: @estudiante
+
 	end
 
 	def estudiante_params
