@@ -55,9 +55,14 @@ Rails.application.routes.draw do
 			get 'consultarencuesta/estudiante', to: 'consultarencuesta#index'
 		end
 	end
+
+	namespace :api do 
+		namespace :v1 do 
+			post 'registrarencuesta', to: 'registrarencuesta#create'
+		end
+	end
 	
-
-
+	
 	root to: 'pages#index'
 
 

@@ -12,8 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2018_11_05_181250) do
 
+  create_table "books", force: :cascade do |t|
+    t.string "title"
+    t.string "author"
+    t.string "synopsis"
+    t.string "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
-<<<<<<< HEAD
   create_table "encuesta", force: :cascade do |t|
     t.integer "motivo_id"
     t.integer "estudiante_id"
@@ -37,8 +44,6 @@ ActiveRecord::Schema.define(version: 2018_11_05_181250) do
     t.datetime "updated_at", null: false
     t.index ["motivo_id"], name: "index_estudiantes_on_motivo_id"
   end
-=======
->>>>>>> 0a6c2f2a243b80971fce79d98b35c4ecf1e37434
 
   create_table "materia", force: :cascade do |t|
     t.string "idMateria"
