@@ -27,7 +27,7 @@
 #Materium.create(	idMateria: "0605", nombreMateria: "Ciencias Naturales")				
 
 
-Encuestum.create(    motivo_id: "1", estudiante_id:"1", materias:"Matematicas-Español")
-Encuestum.create(    motivo_id: "2", estudiante_id:"2", materias:"Ciencias Sociales-Español")
-Encuestum.create(    motivo_id: "3", estudiante_id:"3", materias:"Ingles-Español")
+#Encuestum.create(    motivo_id: "1", estudiante_id:"1", materias:"Matematicas-Español")
+#Encuestum.create(    motivo_id: "2", estudiante_id:"2", materias:"Ciencias Sociales-Español")
+#Encuestum.create(    motivo_id: "3", estudiante_id:"3", materias:"Ingles-Español")
 
