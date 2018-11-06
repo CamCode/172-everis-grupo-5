@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+ </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>{{argumento}}</h1>
+
+  
+  <div class="boton" *ngFor="let motivo of motivos"><a href="#">{{motivo.nombreMotivo}}</a></div>
+	
+</ion-content>
