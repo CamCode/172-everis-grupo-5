@@ -1,7 +1,0 @@
-{
-  "name": "routerapp",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
