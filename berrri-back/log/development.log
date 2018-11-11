@@ -785,3 +785,634 @@ Processing by Api::V1::ConsultarestudianteController#index as HTML
 Completed 200 OK in 63ms (Views: 32.8ms | ActiveRecord: 8.0ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-11-10 18:14:13 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-11-10 18:14:30 -0500
+Processing by PagesController#index as HTML
+  Rendering user_notifier_mailer/send_signup_email.html.erb within layouts/mailer
+  Rendered user_notifier_mailer/send_signup_email.html.erb within layouts/mailer (0.4ms)
+UserNotifierMailer#send_signup_email: processed outbound mail in 1429.1ms
+Sent mail to carlos.eduardo.castro@everis.com (1950.2ms)
+Date: Sat, 10 Nov 2018 18:14:32 -0500
+From: jose.leonardo.saenz.ariza@everis.com
+To: carlos.eduardo.castro@everis.com
+Message-ID: <5be766585d3dd_20e12b1ec29c5ef82582c@jsaenzar-VirtualBox.mail>
+Subject: Thanks for signing up for our amazing app
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Hola Carlitos!</h1>
+  </body>
+</html>
+
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 4212ms (Views: 790.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 18:14:51 -0500
+Processing by Api::V1::ConsultarestudianteController#index as HTML
+  [1m[36mEstudiante Load (7.6ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/controllers/api/v1/consultarestudiante_controller.rb:5
+Completed 200 OK in 100ms (Views: 36.4ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-10 18:18:43 -0500
+Processing by PagesController#index as HTML
+  Rendering user_notifier_mailer/send_signup_email.html.erb within layouts/mailer
+  Rendered user_notifier_mailer/send_signup_email.html.erb within layouts/mailer (0.3ms)
+UserNotifierMailer#send_signup_email: processed outbound mail in 14.7ms
+Sent mail to carlos.eduardo.castro@everis.com (1641.6ms)
+Date: Sat, 10 Nov 2018 18:18:43 -0500
+From: jose.leonardo.saenz.ariza@everis.com
+To: carlos.eduardo.castro@everis.com
+Message-ID: <5be76753c8db_20e12b1ec29c5430259d4@jsaenzar-VirtualBox.mail>
+Subject: Thanks for signing up for our amazing app
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Hola Carlitos!</h1>
+  </body>
+</html>
+
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1706ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateUsers (20181110232535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181110232535_create_users.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181110232535_create_users.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (27.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+Migrating to CreateUsers (20181110232535)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181110232535_create_users.rb:3
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181110232535_create_users.rb:3
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+Migrating to DropUsersTable (20181110233528)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (28.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ db/migrate/20181110233528_drop_users_table.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181110233528"]]
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+Migrating to CreateUsers (20181110233925)
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20181110233925_create_users.rb:3
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20181110233925_create_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20181110233925"]]
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (59.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (3.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example@mail.com"], ["password_digest", "$2a$10$tJF512GLpXs3gfXw1SZSPuAi42aXCsAnwiJyuDWTL5iP9CESGTzF2"], ["created_at", "2018-11-11 00:44:47.620184"], ["updated_at", "2018-11-11 00:44:47.620184"]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/authenticate" for 127.0.0.1 at 2018-11-10 19:46:47 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example1@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example1@mail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant AuthenticationController::AuthenticateUser):
+  
+app/controllers/authentication_controller.rb:5:in `authenticate'
+Started POST "/authenticate" for 127.0.0.1 at 2018-11-10 19:51:42 -0500
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example1@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example1@mail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant AuthenticationController::AuthenticateUser):
+  
+app/controllers/authentication_controller.rb:5:in `authenticate'
+Started POST "/authenticate" for 127.0.0.1 at 2018-11-10 19:53:46 -0500
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example@mail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant AuthenticationController::AuthenticateUser):
+  
+app/controllers/authentication_controller.rb:5:in `authenticate'
+Started POST "/authenticate" for 127.0.0.1 at 2018-11-10 19:54:48 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example@mail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@mail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@mail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:18
+Completed 200 OK in 470ms (Views: 0.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 19:56:03 -0500
+Processing by Api::V1::ConsultarestudianteController#index as HTML
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 19:57:22 -0500
+Processing by Api::V1::ConsultarestudianteController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 19:58:58 -0500
+Processing by Api::V1::ConsultarestudianteController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mEstudiante Load (5.5ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/controllers/api/v1/consultarestudiante_controller.rb:5
+Completed 200 OK in 89ms (Views: 29.2ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/api/v1/crearestudiante" for 127.0.0.1 at 2018-11-10 20:03:04 -0500
+Processing by Api::V1::CrearestudianteController#create as */*
+  Parameters: {"tipoId"=>"TI", "numId"=>"1022346353", "nombre"=>"Camila", "apellido"=>"Melo", "edad"=>"16", "genero"=>"Femenino", "crearestudiante"=>{"tipoId"=>"TI", "numId"=>"1022346353", "nombre"=>"Camila", "apellido"=>"Melo", "edad"=>"16", "genero"=>"Femenino"}}
+Can't verify CSRF token authenticity.
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/api/v1/crearestudiante" for 127.0.0.1 at 2018-11-10 20:03:43 -0500
+Processing by Api::V1::CrearestudianteController#create as */*
+  Parameters: {"tipoId"=>"TI", "numId"=>"1022346353", "nombre"=>"Camila", "apellido"=>"Melo", "edad"=>"16", "genero"=>"Femenino", "crearestudiante"=>{"tipoId"=>"TI", "numId"=>"1022346353", "nombre"=>"Camila", "apellido"=>"Melo", "edad"=>"16", "genero"=>"Femenino"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+Unpermitted parameter: :crearestudiante
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/crearestudiante_controller.rb:6
+  [1m[36mEstudiante Create (5.3ms)[0m  [1m[32mINSERT INTO "estudiantes" ("tipoId", "numId", "nombre", "apellido", "edad", "genero", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["tipoId", "TI"], ["numId", "1022346353"], ["nombre", "Camila"], ["apellido", "Melo"], ["edad", "16"], ["genero", "Femenino"], ["created_at", "2018-11-11 01:03:43.431316"], ["updated_at", "2018-11-11 01:03:43.431316"]]
+  ↳ app/controllers/api/v1/crearestudiante_controller.rb:6
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/crearestudiante_controller.rb:6
+Completed 200 OK in 30ms (Views: 0.7ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 20:04:21 -0500
+Processing by Api::V1::ConsultarestudianteController#index as */*
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 20:04:35 -0500
+Processing by Api::V1::ConsultarestudianteController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mEstudiante Load (0.3ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/controllers/api/v1/consultarestudiante_controller.rb:5
+Completed 200 OK in 15ms (Views: 11.3ms | ActiveRecord: 0.4ms)
+
+
+Started PUT "/api/v1/registrarmotivo/estudiante" for 127.0.0.1 at 2018-11-10 20:09:25 -0500
+Processing by Api::V1::RegistrarmotivoestudianteController#update as */*
+  Parameters: {"motivo_id"=>2, "id"=>20, "registrarmotivoestudiante"=>{"motivo_id"=>2, "id"=>20}}
+Can't verify CSRF token authenticity.
+Filter chain halted as :authenticate_request rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started PUT "/api/v1/registrarmotivo/estudiante" for 127.0.0.1 at 2018-11-10 20:09:38 -0500
+Processing by Api::V1::RegistrarmotivoestudianteController#update as */*
+  Parameters: {"motivo_id"=>2, "id"=>20, "registrarmotivoestudiante"=>{"motivo_id"=>2, "id"=>20}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mEstudiante Load (0.3ms)[0m  [1m[34mSELECT  "estudiantes".* FROM "estudiantes" WHERE "estudiantes"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/registrarmotivoestudiante_controller.rb:5
+Unpermitted parameters: :id, :registrarmotivoestudiante
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/registrarmotivoestudiante_controller.rb:6
+  [1m[36mEstudiante Update (6.4ms)[0m  [1m[33mUPDATE "estudiantes" SET "motivo_id" = ?, "updated_at" = ? WHERE "estudiantes"."id" = ?[0m  [["motivo_id", 2], ["updated_at", "2018-11-11 01:09:38.284750"], ["id", 20]]
+  ↳ app/controllers/api/v1/registrarmotivoestudiante_controller.rb:6
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/registrarmotivoestudiante_controller.rb:6
+Completed 200 OK in 30ms (Views: 0.5ms | ActiveRecord: 13.5ms)
+
+
+Started GET "/api/v1/consultarestudiantes" for 127.0.0.1 at 2018-11-10 20:58:28 -0500
+Processing by Api::V1::ConsultarestudianteController#index as */*
+  [1m[36mUser Load (5.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/commands/authorize_api_request.rb:17
+  [1m[36mEstudiante Load (1.2ms)[0m  [1m[34mSELECT "estudiantes".* FROM "estudiantes"[0m
+  ↳ app/controllers/api/v1/consultarestudiante_controller.rb:5
+Completed 200 OK in 156ms (Views: 88.2ms | ActiveRecord: 12.0ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:30:14 -0500
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"example22@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+Completed 404 Not Found in 2ms (ActiveRecord: 1.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:57:in `set_user'
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:30:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"example22@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 184ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:32:32 -0500
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"example22@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 23ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:32:45 -0500
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"example22@mail.com", "password"=>"[FILTERED]", "user"=>{"email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:33:11 -0500
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"example22@mail.com", "password_digest"=>"[FILTERED]", "user"=>{"email"=>"example22@mail.com", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameter: :password_digest
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 10ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:35:58 -0500
+Processing by UsersController#create as */*
+  Parameters: {"email"=>"example22@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 22ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:37:46 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example22", "email"=>"example22@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example22", "email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 6ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/authenticate" for 127.0.0.1 at 2018-11-10 21:40:53 -0500
+Processing by AuthenticationController#authenticate as */*
+  Parameters: {"email"=>"example@mail.com", "password"=>"[FILTERED]", "authentication"=>{"email"=>"example@mail.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@mail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:20
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@mail.com"], ["LIMIT", 1]]
+  ↳ app/commands/authenticate_user.rb:20
+Completed 200 OK in 402ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:41:09 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example22", "email"=>"example22@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example22", "email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 8ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example2@mail.com"], ["password_digest", "$2a$10$ml5THJqm7sbOlaIvkCyk3O8K.6fHwe599BuaXlbPsWNgHBJHScSHq"], ["created_at", "2018-11-11 02:42:27.237966"], ["updated_at", "2018-11-11 02:42:27.237966"]]
+  [1m[35m (30.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:44:41 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example22", "email"=>"example22@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example22", "email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 197ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `permit' for #<UsersController:0x00007f95c8a93ef8>
+Did you mean?  print):
+  
+app/controllers/users_controller.rb:63:in `user_params'
+app/controllers/users_controller.rb:29:in `create'
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 21:47:13 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example22", "email"=>"example22@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example22", "email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameter: :name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 422 Unprocessable Entity in 14ms (Views: 0.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:09:04 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example22", "email"=>"example22@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example22", "email"=>"example22@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Create (6.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example22@mail.com"], ["password_digest", "$2a$10$Wj/pvqvHVkulhwAQ3M2KW.leWOpLJphw8j720vgWZY6WTUdMAHULS"], ["created_at", "2018-11-11 03:09:04.589278"], ["updated_at", "2018-11-11 03:09:04.589278"]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 500 Internal Server Error in 440ms (ActiveRecord: 14.5ms)
+
+
+  
+NoMethodError (undefined method `user_url' for #<UsersController:0x00007f95c8c58a18>):
+  
+app/controllers/users_controller.rb:32:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:11:43 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example33", "email"=>"example33@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example33", "email"=>"example33@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example33@mail.com"], ["password_digest", "$2a$10$ey7WAhXEi/TMvzDzqJ0UBuImqIyobiK/vgSb3KYKfy0F5XIGb/sQm"], ["created_at", "2018-11-11 03:11:43.905701"], ["updated_at", "2018-11-11 03:11:43.905701"]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 336ms (ActiveRecord: 11.8ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:13:52 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example44", "email"=>"example44@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example44", "email"=>"example44@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 316ms (ActiveRecord: 0.9ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:15:36 -0500
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example44", "email"=>"example44@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example44", "email"=>"example44@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 352ms (ActiveRecord: 1.0ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:21:14 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example55", "email"=>"example55@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example55", "email"=>"example55@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 298ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:22:13 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example55", "email"=>"example55@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example55", "email"=>"example55@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 301ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:24:44 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example55", "email"=>"example55@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example55", "email"=>"example55@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 295ms (ActiveRecord: 0.0ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:26:17 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example55", "email"=>"example55@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example55", "email"=>"example55@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example55@mail.com"], ["password_digest", "$2a$10$0XA1PWmIciP0anLRtIRPIejIuOMhx.UK/WeDD3tEUeOLrrKt9/PuW"], ["created_at", "2018-11-11 03:26:27.991688"], ["updated_at", "2018-11-11 03:26:27.991688"]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (10.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 226ms (ActiveRecord: 14.0ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:28:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example66", "email"=>"example66@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example66", "email"=>"example66@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example66@mail.com"], ["password_digest", "$2a$10$Z6xhEqrZozuHKvm.3uq/t.Mrs2/93fUA5R2XJkQeAKIBeer7wVzoG"], ["created_at", "2018-11-11 03:28:58.160541"], ["updated_at", "2018-11-11 03:28:58.160541"]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (65.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 500 Internal Server Error in 516ms (ActiveRecord: 68.6ms)
+
+
+  
+NoMethodError (undefined method `user_url' for #<UsersController:0x000055a3fc995548>):
+  
+app/controllers/users_controller.rb:32:in `create'
+Started POST "/createuser" for 127.0.0.1 at 2018-11-10 22:29:24 -0500
+Processing by UsersController#create as */*
+  Parameters: {"name"=>"example66", "email"=>"example66@mail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"name"=>"example66", "email"=>"example66@mail.com"}}
+Can't verify CSRF token authenticity.
+Unpermitted parameters: :name, :user
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+  [1m[36mUser Create (3.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "example66@mail.com"], ["password_digest", "$2a$10$ICPfyqnzEmYkj6yjKD066ukc35SSeP2RBJTGhYe43duK9dVsaQZla"], ["created_at", "2018-11-11 03:29:24.553435"], ["updated_at", "2018-11-11 03:29:24.553435"]]
+  ↳ app/controllers/users_controller.rb:31
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31
+Completed 200 OK in 237ms (Views: 0.6ms | ActiveRecord: 17.7ms)
+
+
+Started GET "/consultaruser" for 127.0.0.1 at 2018-11-10 22:37:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/consultaruser"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/consultaruser" for 127.0.0.1 at 2018-11-10 22:38:10 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:19
+Completed 200 OK in 31ms (Views: 25.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/consultaruser" for 127.0.0.1 at 2018-11-10 22:55:10 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/jsaenzar/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:19
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.91ms)
+Completed 200 OK in 183ms (Views: 157.7ms | ActiveRecord: 3.5ms)
+
+

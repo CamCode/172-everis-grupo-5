@@ -1,15 +1,25 @@
 class ApplicationController < ActionController::Base
 
-	layout :layout_by_resource
+#	layout :layout_by_resource
 	protect_from_forgery with: :null_session
 
-	private
+ before_action :authenticate_request
+  attr_reader :current_user
 
-	def layout_by_resource
-		if devise_controller?
-			"devise"
-		else
-			"application"
-		end
-	end
+  private
+
+  def authenticate_request
+    @current_user = AuthorizeApiRequest.call(request.headers).result
+    render json: { error: 'Not Authorized' }, status: 401 unless @current_user
+  end
+
+#	private
+
+#	def layout_by_resource
+#		if devise_controller?
+#			"devise"
+#		else
+#			"application"
+#		end
+#	end
 end
