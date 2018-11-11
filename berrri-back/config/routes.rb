@@ -60,5 +60,10 @@ Rails.application.routes.draw do
 
 	root to: 'pages#index'
 
+	post 'authenticate', to: 'authentication#authenticate'
+
+	post 'createuser' => 'users#create'
+
+	get 'consultaruser' => 'users#index'
 
 end
